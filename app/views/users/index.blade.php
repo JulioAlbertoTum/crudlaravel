@@ -25,8 +25,8 @@
   			</div>
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       			<ul class="nav navbar-nav">
-        			<li class="active"><a href="../public/users">Todos</a></li>
-        			<li><a href="../public/users/create">Nuevo</a></li>
+        			<li class="active"><a href="/users">Todos</a></li>
+        			<li><a href="/users/create">Nuevo</a></li>
         		</ul>
         	</div>
         </div>
@@ -54,9 +54,9 @@
 							<td>{{ $user->name }}</td>
 							<td>{{ $user->email }}</td>
 							<td>
-								<a href="../public/users/show/{{ $user->id }}"><span class="label label-info">Ver</span></a>
-								<a href="../public/users/edit/{{ $user->id }}"><span class="label label-success">Editar</span></a>
-								<a href="{{ url('../public/users/destroy',$user->id) }}"><span class="label label-danger">Eliminar</span></a>
+								<a href="/users/show/{{ $user->id }}"><span class="label label-info">Ver</span></a>
+								<a href="/users/edit/{{ $user->id }}"><span class="label label-success">Editar</span></a>
+								<a href="{{ url('/users/destroy',$user->id) }}"><span class="label label-danger">Eliminar</span></a>
 							</td>
 						</tr>
 					@endforeach
